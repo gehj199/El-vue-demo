@@ -14,6 +14,7 @@
       <gh-input type="text" @change="textChange()"></gh-input>
       <gh-input type="number" @change="numChange()"></gh-input>
       <gh-input type="date" @change="dateChange()"></gh-input>
+      <gh-input type="date" @change="dateChange()"></gh-input>
     </div>
   </div>
 </template>
