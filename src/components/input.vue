@@ -9,6 +9,10 @@ export default {
     type: {
       type: String,
       default: "default"
+    },
+    title:{
+      type:Boolean,
+      default:false
     }
   },
   methods: {
