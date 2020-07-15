@@ -1,0 +1,55 @@
+@width      : 10px;
+@height     : @width +10px;
+@color      : red;
+@marginRight: 20px;
+@primary    : #409eff;
+@success    : #67c23a;
+@warning    : #e6a23c;
+@danger     : #f56c6c;
+@info       : #909399;
+@fff        : #fff;
+
+#header {
+  width : @width;
+  height: @height;
+}
+
+.row {
+  margin-bottom: @marginRight;
+
+  .gh-button {
+    margin-right : @marginRight;
+    margin-bottom: @marginRight;
+    padding      : 5px;
+    border       : none;
+  }
+
+  .btn--primary {
+    background: @primary;
+  }
+
+  .btn--success {
+    background: @success;
+  }
+
+  .btn--warning {
+    background: @warning;
+  }
+
+  .btn--info {
+    background: @info;
+  }
+
+  .btn--danger {
+    background: @danger;
+  }
+
+  .isPlain {
+    background: #eee;
+  }
+
+  .isCircle {
+    border-radius: 50%;
+  }
+
+}
