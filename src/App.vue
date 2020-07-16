@@ -16,6 +16,9 @@
       <gh-input type="date" @change="dateChange()"></gh-input>
       <gh-input type="date" @change="dateChange()"></gh-input>
     </div>
+    <div>
+      <gh-dialog title="标题" class="fontSize" sure @click="doOk"></gh-dialog>
+    </div>
   </div>
 </template>
 
@@ -39,6 +42,9 @@ export default {
     },
     dateChange() {
       console.log("date");
+    },
+    doOk(){
+      alert(1);
     }
   }
 };
