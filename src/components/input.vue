@@ -1,5 +1,5 @@
 <template>
-  <input :type="type" @change="handleChange" />
+  <input :type="type" @change="handleChange" class="inputControl" />
 </template>
 
 <script>
@@ -10,9 +10,9 @@ export default {
       type: String,
       default: "default"
     },
-    title:{
-      type:Boolean,
-      default:false
+    title: {
+      type: Boolean,
+      default: false
     }
   },
   methods: {
@@ -23,5 +23,10 @@ export default {
 };
 </script>
 
-<style>
+<style lang="less" src='../assets/less/style.less'>
+@controlWidth: 80%;
+.inputControl {
+  width: @controlWidth;
+  padding: 0;
+}
 </style>

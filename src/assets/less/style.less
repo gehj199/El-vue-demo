@@ -1,14 +1,15 @@
-@width      : 10px;
-@height     : @width +10px;
-@color      : red;
-@marginRight: 20px;
-@primary    : #409eff;
-@success    : #67c23a;
-@warning    : #e6a23c;
-@danger     : #f56c6c;
-@info       : #909399;
-@fff        : #fff;
-@eee        : #eee;
+@width       : 10px;
+@height      : @width +10px;
+@color       : red;
+@marginRight : 20px;
+@primary     : #409eff;
+@success     : #67c23a;
+@warning     : #e6a23c;
+@danger      : #f56c6c;
+@info        : #909399;
+@fff         : #fff;
+@eee         : #eee;
+@controlWidth: 80%;
 
 #header {
   width : @width;
@@ -55,6 +56,11 @@
 
   .title {
     background: #eee;
+  }
+
+  .inputControl {
+    width  : @controlWidth;
+    padding: 0;
   }
 
 }
