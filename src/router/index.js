@@ -1,16 +1,30 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import FirstPage from '@/components/FirstPage'
+import footers from '@/components/footers'
+import home from '@/components/home'
+import login from '@/components/login'
+import cart from '@/components/cart'
+
 import '../assets/less/style.less'
 
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'FirstPage',
-      component: FirstPage
-    }
-  ]
+    routes: [{
+        path: '/',
+        name: 'home',
+        component: home
+    }, {
+        path: '/footers',
+        name: 'footers',
+        component: footers
+    }, {
+        path: '/login',
+        name: 'login',
+        component: login
+    }, {
+        path: '/cart',
+        name: 'cart',
+        component: cart
+    }]
 })

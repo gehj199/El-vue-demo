@@ -1,0 +1,75 @@
+<table id="dg" class="easyui-datagrid"
+           data-options="objectName:'Base Datas',
+            url:'@Url.Action("GetBillOfLadingOrdersByBillId", "Order")?billId=@Model.Id&isConfirmReceipt=@isConfirmReceipt',
+            method:'get',
+            pagination:false,
+            rownumbers:true,
+            singleSelect:false,
+            fitColumns:true,
+            fit:true,
+            scrollbarSize:0,
+            pageSize:20,
+            onSelect:dg_onSelect,
+            onLoadSuccess:dg_onLoadSuccess,
+            idField:'id'">
+        <thead>
+            <tr>
+                <th data-options="field:'orderCategory',width:40,align:'left',sortable:true">
+                    订单类型
+                </th>
+                <th data-options="field:'productCategoryName',width:40,align:'left',sortable:true">
+                    产品大类
+                </th>
+                <th data-options="field:'orderNumber',width:40,align:'left',sortable:true">
+                    订单号
+                </th>
+                <th data-options="field:'productName',width:60,align:'left',sortable:true">
+                    产品名称
+                </th>
+                <th data-options="field:'batchNumber',width:40,align:'left',sortable:true">
+                    批次号
+                </th>
+                <th data-options="field:'orderDate',width:40,align:'left',sortable:true, formatter:$.context.dateTimeFormatter">
+                    下单日期
+                </th>
+                <th data-options="field:'orderCount',width:40,align:'left',sortable:true">
+                    订单数量
+                </th>
+
+                <th data-options="field:'takenDeliveryQty',width:40,align:'left',sortable:false">
+                    已提货数量
+                </th>
+
+                @if (isSaleUpdate)
+                {
+                    <th data-options="field:'billCount',width:40,align:'left',sortable:false">
+                        计划提货数量
+                    </th>
+                    <th data-options="field:'actualBillCount',width:40,align:'left',sortable:false,editor:{
+                    type:'numberspinner',
+                    options:{
+                        min:0,
+                        required:true
+                    }}">
+                        实际提货数量
+                    </th>
+                    <th data-options="field:'remark',width:120,align:'left',sortable:false,editor:{
+                            type:'textbox'}">
+                        备注
+                    </th>
+                }
+                else
+                {
+                    <th data-options="field:'billCount',width:40,align:'left',sortable:false,editor:{
+                        type:'numberspinner',
+                        options:{
+                            min:0,
+                            required:true
+                        }}">
+                        本次提货数量
+                    </th>
+
+                }
+            </tr>
+        </thead>
+    </table>
