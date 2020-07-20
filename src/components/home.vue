@@ -1,6 +1,10 @@
 <template>
   <div>
       <searchBar></searchBar>
+      <div style="margin-top:44px;">
+        <graphicItem></graphicItem>
+        <appMenu></appMenu>
+      </div>
       <footers></footers>
   </div>
 </template>

@@ -7,6 +7,8 @@ import GhDialog from './components/dialog'
 import Footers from './components/footers'
 import searchBar from '@/components/searchBar'
 import store from './store/index.js'
+import graphicItem from '@/components/graphicItem'
+import appMenu from '@/components/appMenu'
 
 import Vuex from 'vuex'
 import less from 'less'
@@ -16,8 +18,10 @@ Vue.use(less)
 Vue.use(Vuex)
 
 Vue.component(GhDialog.name, GhDialog);
-Vue.component(Footers.name, Footers)
-Vue.component(searchBar.name, searchBar)
+Vue.component(Footers.name, Footers);
+Vue.component(searchBar.name, searchBar);
+Vue.component(graphicItem.name, graphicItem)
+Vue.component(appMenu.name, appMenu)
 
 /* eslint-disable no-new */
 new Vue({
