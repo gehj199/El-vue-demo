@@ -36,6 +36,7 @@ export default {
     methods:{
       search(e){
         console.log(e);
+        this.$router.push({"path":"/login"})
       }
     }
 }
