@@ -31,6 +31,9 @@ module.exports = {
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath
   },
+  externals:{
+//添加外部文件，减少webpack的打包
+  },
   resolve: {
     extensions: ['.js', '.vue', '.json'],
     alias: {
@@ -79,7 +82,7 @@ module.exports = {
         test: /\.less$/,
         loader: 'vue-loader',
         options: vueLoaderConfig
-      }     
+      }
     ]
   },
   node: {
