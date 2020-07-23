@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!-- <img src="./assets/logo.png"> -->
-
+    {{keys|revers}}
     <router-view/>
 
   </div>
@@ -19,15 +19,15 @@ export default {
       keys:['1','2','3','4']
     };
   },
-  // filters: {
-  //   revers: function(val) {
-  //     var str=val.push(4);
-  //     return str;
-  //   }
-  // },
+  filters: {
+    revers: function(val) {
+      var str=[...val];
+      str.push(5)
+      return str.reverse();
+    }
+  },
   methods: {
     fn() {
-
       this.showDialog = true;
     },
     textChange() {

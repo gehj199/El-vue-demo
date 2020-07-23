@@ -111,7 +111,7 @@ a {
   a {
     position        : relative;
     width           : 20%;
-    height          : 3.2em;
+    height          : 3.5em;
     box-sizing      : border-box;
     float           : left;
     font-size       : 16px;
@@ -260,6 +260,7 @@ input::placeholder {
   top     : 0;
   right   : 0;
   z-index : 15;
+  overflow-x: hidden;
 
   .mjd-header {
     background: transparent;
@@ -378,6 +379,7 @@ input::placeholder {
   background : #e6a23c;
   padding-top: 3px;
   width      : 100vw;
+  height:47vw;
   overflow-x:hidden;
   .content {
     overflow-x:hidden;
@@ -386,7 +388,7 @@ input::placeholder {
       display       : flex;
       flex-wrap     : wrap;
       flex-direction: row;
-      margin        : 0 3vw;
+      margin        : 5vw 3vw 0 3vw;
       padding-top   : 10px;
       background    : #fff;
       border-radius : 8px;
@@ -451,6 +453,16 @@ input::placeholder {
     }
   }
 
+}
+
+.el-table{
+  width:100vw;
+  th{
+    width:33vw;
+  }
+  td{
+    width:33vw;
+  }
 }
 
 /*appMenu*/

@@ -146,7 +146,7 @@
                   <span>充值缴费</span>
               </router-link>
           </div>
-          
+
       </div>
       <div class="pagination">
           <b :class="{'cur':pageIndex==1}"></b>

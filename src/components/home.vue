@@ -5,6 +5,9 @@
         <graphicItem></graphicItem>
         <appMenu></appMenu>
       </div>
+      <div style="margin-top:15px;">
+        测试方法
+      </div>
       <footers></footers>
   </div>
 </template>

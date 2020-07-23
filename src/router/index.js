@@ -4,7 +4,8 @@ import footers from '@/components/footers'
 import home from '@/components/home'
 import login from '@/components/login'
 import cart from '@/components/cart'
-import helloworld from '@/components/helloworld'
+import menu from '@/components/menu'
+import permission from '@/components/setPermission'
 
 import '../assets/less/style.less'
 
@@ -27,5 +28,11 @@ export default new Router({
         path: '/cart',
         name: 'cart',
         component: cart
+    },{
+      path:'/menu',
+      component:menu
+    },{
+      path:'/permission',
+      component:permission
     }]
 })

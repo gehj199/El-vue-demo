@@ -1,8 +1,14 @@
-# myvue
+### 使用VUE技术栈构建的仿京东移动端网页的案例，温习常用技术
 
-> A Vue.js project
+#### 实现技术如下：vue、vue路由、VueX 、webpack打包、git源代码管理（项目中不涉及）
 
-## Build Setup
+练手项目,不足之处，还请谅解
+====
+
+
+>
+
+#### 使用方法
 
 ``` bash
 # install dependencies
@@ -13,6 +19,7 @@ npm run dev
 
 # build for production with minification
 npm run build
+
 
 # build for production and view the bundle analyzer report
 npm run build --report
@@ -27,4 +34,3 @@ npm run e2e
 npm test
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
